@@ -18,10 +18,10 @@ while True:
         button_status = digitalRead(button)
         if((button_status) | buttonPushed == False):
             digitalWrite(buzzer_pin,0)
-            #buttonPushed = False
+            buttonPushed = False
         else:
             digitalWrite(buzzer_pin,1)
-            #buttonPushed = True
+            buttonPushed = True
 
 
 
