@@ -6,18 +6,20 @@ import json
 from grove_rgb_lcd import *
 
 class buzz:
-    buzzer_pin = 2
-    button = 4
-    previousInput = 0
-    buttonPushed = False
-    button_status = False
-    buzzing = False
-    linkAPI = 'http://192.168.50.148:4000/api'
-    payload = '';
-    pinMode(buzzer_pin, 'OUTPUT')
-    pinMode(button, 'INPUT')
+
 
     def buzz(self):
+        buzzer_pin = 2
+        button = 4
+        previousInput = 0
+        buttonPushed = False
+        button_status = False
+        buzzing = False
+        linkAPI = 'http://192.168.50.148:4000/api'
+        payload = '';
+        pinMode(buzzer_pin, 'OUTPUT')
+        pinMode(button, 'INPUT')
+
         buttonPushed = button_status
         button_status = digitalRead(button)
         if(button_status == buttonPushed):
