@@ -5,7 +5,7 @@ import requests
 import json
 from grove_rgb_lcd import *
 
-class Buzzer:
+class buzz:
     buzzer_pin = 2
     button = 4
     previousInput = 0
