@@ -11,7 +11,7 @@ linkAPI = 'http://192.168.50.148:4000/api'
 
 pinMode(buzzer_pin, 'OUTPUT')
 pinMode(button, 'INPUT')
-r = requests.post(linkAPI, data = {'team':{{'id' : 13}}, 'sensor':{{'id': 0}, {'state':True}, {'value':'WARNING!'}}})
+r = requests.post('http://192.168.50.148:4000/api', data = {'team':{{'id' : 13}}, 'sensor':{{'id': 0}, {'state':True}, {'value':'WARNING!'}}})
 print(r.url)
 while True:
     try:
