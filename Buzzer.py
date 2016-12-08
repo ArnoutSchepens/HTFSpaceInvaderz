@@ -16,8 +16,9 @@ class Buzzer:
     payload = '';
     pinMode(buzzer_pin, 'OUTPUT')
     pinMode(button, 'INPUT')
+    buzzer = Buzzer()
 
-    Buzzer.buzz()
+    buzzer.buzz()
 
     buttonPushed = button_status
     button_status = digitalRead(button)
