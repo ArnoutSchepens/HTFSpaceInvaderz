@@ -9,7 +9,7 @@ class Main:
     while True:
         try:
 
-            buzzer.buzz
+            buzzer.buzz()
             #humTemp.getTempHum
 
 
