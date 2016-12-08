@@ -16,7 +16,7 @@ pinMode(button, 'INPUT')
 while True:
     try:
         button_status = digitalRead(button)
-        if((button_status) OR (NOT(buttonPushed):
+        if((button_status) | (NOT(buttonPushed):
             digitalWrite(buzzer_pin,0)
             buttonPushed = False
         else:
