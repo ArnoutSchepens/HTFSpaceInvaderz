@@ -3,11 +3,14 @@ import Buzzer
 class main:
 
     buzzer = Buzzer()
+    humTemp = HumidtyTemperature()
 
     while True:
         try:
 
-            Buzzer.buzz()
+            buzzer.buzz
+            humTemp.getTempHum
+
 
 
 
