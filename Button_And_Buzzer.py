@@ -18,6 +18,7 @@ while True:
             previousInput = button_status
         else:
             digitalWrite(buzzer_pin,0)
+            previousInput != button_status
 
     except KeyboardInterrupt:
         digitalWrite(buzzer_pin, 0)
