@@ -35,3 +35,6 @@ class buzz:
                 #payload = {'team':{'id':13},'sensor':[{'id':0},{'state':False}, {'value', 'Alles ok!'}]}
                 #Als JSON
         #r = request.post(linkAPI, data=payload)
+
+    def buzzOff(self):
+        digitalWrite(2, 0)
