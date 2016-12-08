@@ -18,4 +18,4 @@ class Main:
         except KeyboardInterrupt:
             digitalWrite(buzzer_pin, 0)
         except (IOError, TypeError) as e:
-            print "Error"
+            print(e)
