@@ -26,10 +26,10 @@ class Buzzer:
             if(button_status and buzzing == False):
                 digitalWrite(buzzer_pin, 1)
                 buzzing = True
-                payload = {'team':{'id':13},'sensor':[{'id':0},{'state':True}, {'value', 'WARNING!!!'}]}
+                #payload = {'team':{'id':13},'sensor':[{'id':0},{'state':True}, {'value', 'WARNING!!!'}]}
             elif(button_status and buzzing == True):
                 digitalWrite(buzzer_pin, 0)
                 buzzing = False
-                payload = {'team':{'id':13},'sensor':[{'id':0},{'state':False}, {'value', 'Alles ok!'}]}
+                #payload = {'team':{'id':13},'sensor':[{'id':0},{'state':False}, {'value', 'Alles ok!'}]}
                 #Als JSON
         #r = request.post(linkAPI, data=payload)
