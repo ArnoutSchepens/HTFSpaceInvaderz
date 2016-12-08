@@ -3,15 +3,15 @@ from  HumidityTemperature import *
 
 class Main:
 
-    buzzer = buzz()
-    humTemp = HumidityTemperature()
+
 
     while True:
         try:
 
-            buzzer.buzz()
-            humTemp.getTempHum
-
+            #buzzer.buzz()
+            #humTemp.getTempHum
+            movement = checkMovement()
+            
 
 
 
