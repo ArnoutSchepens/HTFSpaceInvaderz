@@ -4,13 +4,13 @@ from  HumidityTemperature import *
 class Main:
 
     buzzer = buzz()
-    #humTemp = HumidityTemperature()
+    humTemp = HumidityTemperature()
 
     while True:
         try:
 
             buzzer.buzz()
-            #humTemp.getTempHum
+            humTemp.getTempHum
 
 
 
