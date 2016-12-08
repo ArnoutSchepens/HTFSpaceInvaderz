@@ -1,6 +1,6 @@
 import Buzzer
 
-class main:
+class Main:
 
     buzzer = Buzzer()
     humTemp = HumidtyTemperature()
