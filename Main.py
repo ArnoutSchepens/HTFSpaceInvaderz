@@ -19,3 +19,4 @@ class Main:
             digitalWrite(2, 0)
         except (IOError, TypeError) as e:
             print(e)
+            digitalWrite(2, 0)
