@@ -19,7 +19,6 @@ while True:
     try:
         buttonPushed = button_status
         button_status = digitalRead(button)
-<<<<<<< HEAD
         if(button_status == buttonPushed):
             print("niets")
         else:
@@ -31,15 +30,6 @@ while True:
                 digitalWrite(buzzer_pin, 0)
                 buzzing = False
                 payload = {'team':{'id':13},'sensor':[{'id':0},{'state':False}, {'value', 'Alles ok!'}]}
-=======
-        if((button_status) | buttonPushed == False):
-            digitalWrite(buzzer_pin,0)
-            buttonPushed = False
-        else:
-            digitalWrite(buzzer_pin,1)
-            buttonPushed = True
-
->>>>>>> fd6b94ef579641186b3b6a49a3256ef2dd8bb8fd
 
         r = request.post(linkAPI, data=payload)
 
