@@ -16,7 +16,7 @@ class buzz:
         button_status = False
         buzzing = False
         linkAPI = 'http://192.168.50.148:4000/api'
-        payload = '';
+        payload = ''
         pinMode(buzzer_pin, 'OUTPUT')
         pinMode(button, 'INPUT')
 
