@@ -17,7 +17,7 @@ class Buzzer:
     pinMode(buzzer_pin, 'OUTPUT')
     pinMode(button, 'INPUT')
 
-    def buzz():
+    def buzz(self):
         buttonPushed = button_status
         button_status = digitalRead(button)
         if(button_status == buttonPushed):

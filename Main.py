@@ -3,7 +3,7 @@ import Buzzer
 class Main:
 
     buzzer = Buzzer()
-    humTemp = HumidtyTemperature()
+    humTemp = HumidityTemperature()
 
     while True:
         try:

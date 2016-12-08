@@ -1,11 +1,11 @@
 from grove_rgb_lcd import *
 from grovepi import *
 
-class HumidtyTemperature:
+class HumidityTemperature:
 
     dhtSensorPort = 7
 
-    def getTempHum():
+    def getTempHum(self):
         [ tmp,hum ] = dht(dhtSensorPort, 1)
 
         print "Temp =", temp, "C\thumidity =", hum, "%"
