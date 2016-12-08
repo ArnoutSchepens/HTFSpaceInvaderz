@@ -8,22 +8,30 @@ buzzer_pin = 2
 button = 4
 previousInput = 0
 buttonPushed = False
+button_status = False
+buzzing = False
 linkAPI = 'http://192.168.50.148:4000/api'
-payload = {'team':{'id':13},'sensor':[{'id':0},{'state':True}, {'value', 'WARNING!!!'}]}
-
+payload = '';
+print(r.text)
 pinMode(buzzer_pin, 'OUTPUT')
 pinMode(button, 'INPUT')
 while True:
     try:
+        buttonPushed = button_status
         button_status = digitalRead(button)
-        if((button_status) | buttonPushed == False):
-            digitalWrite(buzzer_pin,0)
-            #buttonPushed = False
+        if(button_status == buttonPushed):
+            print("niets")
         else:
-            digitalWrite(buzzer_pin,1)
-            #buttonPushed = True
+            if(button_status and buzzing == False):
+                digitalWrite(buzzer_pin, 1)
+                buzzing = True
+                payload = {'team':{'id':13},'sensor':[{'id':0},{'state':True}, {'value', 'WARNING!!!'}]}
+            elif(button_status and buzzing == True):
+                digitalWrite(buzzer_pin, 0)
+                buzzing = False
+                payload = {'team':{'id':13},'sensor':[{'id':0},{'state':False}, {'value', 'Alles ok!'}]}
 
-
+        r = request.post(linkAPI, data=payload)
 
 
         """
