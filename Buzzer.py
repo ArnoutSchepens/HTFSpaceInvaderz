@@ -21,7 +21,7 @@ class buzz:
     def buzz(self):
 
         self.buttonPushed = self.button_status
-        self.button_status = self.digitalRead(button)
+        self.button_status = digitalRead(self.button)
         if(self.button_status == self.buttonPushed):
             print("niets")
         else:
