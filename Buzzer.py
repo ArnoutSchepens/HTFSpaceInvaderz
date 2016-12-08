@@ -32,4 +32,4 @@ class Buzzer:
                 buzzing = False
                 payload = {'team':{'id':13},'sensor':[{'id':0},{'state':False}, {'value', 'Alles ok!'}]}
                 #Als JSON
-        r = request.post(linkAPI, data=payload)
+        #r = request.post(linkAPI, data=payload)

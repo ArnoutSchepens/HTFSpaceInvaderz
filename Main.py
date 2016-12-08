@@ -1,15 +1,16 @@
-import Buzzer
+from Buzzer import *
+#import HumidityTemperature
 
 class Main:
 
-    buzzer = Buzzer()
-    humTemp = HumidityTemperature()
+    buzzer = Buzzer.Buzzer()
+    #humTemp = HumidityTemperature()
 
     while True:
         try:
 
             buzzer.buzz
-            humTemp.getTempHum
+            #humTemp.getTempHum
 
 
 
