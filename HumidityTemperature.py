@@ -12,6 +12,7 @@ class HumidityTemperature:
         t = str(temp)
         h = str(hum)
 
+        print("Temp: " + t + "C\tHumidity =" + h + "%")
         setRGB(0,128,64)
         setRGB(0,255,0)
         setText("Temp: " + t + "C\tHumidity =" + h + "%")
